@@ -1,0 +1,11 @@
+timeout 5
+prompt 1
+display welcome.txt
+DEFAULT thinroot
+
+label local
+  localboot 0
+
+label thinroot
+  KERNEL bzImage
+  APPEND initrd=thinRoot-20230313-intelnuc.img

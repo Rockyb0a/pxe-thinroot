@@ -1,0 +1,10 @@
+DEFAULT thinroot
+
+LABEL thinroot 
+MENU LABEL ^thinRoot (default)
+#KERNEL     thinroot.img
+KERNEL 	   http://192.168.92.250:8000/thinroot/thinroot.img
+APPEND     console=tty2 kgdboc=tty2 noswap elevator=deadline consoleblank=120 quiet loglevel=0
+TEXT HELP
+Our thinRoot Environment
+ENDTEXT
